@@ -23,12 +23,15 @@
     color: #c69a39;
     text-decoration: none;
 }
+.product-box-category-list li a:hover{
+    opacity: .7;
+}
 #sort-price{
     border: none;
     outline:  none;
     font-size: 14px;
     padding: 3px 5px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 #sort-price option{
     background-color: #fff;
@@ -91,6 +94,25 @@
    margin-top: 20px;
 }
 .price{
-    margin-top: 20px;
+    color: #ff0000;
     font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.product-item-2 .buy{
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 0;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    background-color: #fa9308;
+    margin-bottom: 10px;
+}
+.product-item-3 p{
+    color:#818181;
+    font-size: 13px;
 }
