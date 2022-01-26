@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile City</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/productBox.css">
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet"> -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
 </head>
 <body>
     <div class="container-main">
@@ -162,54 +168,794 @@
             <!--end header-main-->
        </header>
 
-       <section class="container">
-            <section class="feature">
-                <div class="slideshow">
-                  <div class="owl-carousel owl-theme owl-loaded owl-drag"></div>
-                      <div class="owl-stage-outer">
-                          <div class="owl-stage">
-                              <div class="owl-item clonded" style="width: 747px;">
-                                <div class="item">
-                                    <a href="#">
-                                        <img src="./assets/img/" alt="">
-                                    </a>
-                                </div>
-                              </div>
-                              <div class="owl-item clonded" style="width: 747px;">
-                                <div class="item">
-                                    <a href="#">
-                                        <img src="#" alt="">
-                                    </a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="owl-nav disabled">
-
-                          </div> 
-                          <div class="owl-dots">
-
-                          </div>
-                      </div>  
-                  </div>
-                </section>
-                <div class="slide-video">
-
+       <div class="container">
+            <div class="image-slider">
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/./img/banner-iphone-12-pro-mobilecity-1.jpg" alt="">
+                    </div>  
+                </div>
+                <div class="image-item">
+                   <div class="image">
+                        <img src="./assets/./img/banner-black-shark-4s-mc-2.jpg" alt="">
+                   </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/./img/banner-gt-neo2-mc-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/./img/banner-rog-phone-5s-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                   <div class="image">
+                    <img src="./assets/./img/banner-red-magic-6s-pro-5.jpg" alt="">
+                   </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/./img/banner-k40-gaming-mobilecity-6.jpg" alt="">
+                    </div>
                 </div>
             </div>
+         
+        </div>
+        <!--Product box-->
+        <div class="product-box">
+            <div class="product-box-top">
+                <div class="product-box-category">
+                    <div class="product-title">
+                        <p>Hãng</p>
+                    </div>
+                     <div class="product-box-category-list">
+                        <ul>
+                            <li><a href="#">Tivi Xiaomi</a></li>
+                            <li><a href="#">Apple(iPhone) - Quốc tế</a></li>
+                            <li><a href="#">Sam Sung</a></li>
+                            <li><a href="#">OnePlus</a></li>
+                            <li><a href="#">Xiaomi</a></li>
+                            <li><a href="#">OPPO</a></li>
+                            <li><a href="#">Realme</a></li>
+                            <li><a href="#">Vivo</a></li>
+                            <li><a href="#">ZTE(Nubia)</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Nokia</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Vsmart</a></li>
+                        </ul>   
+                     </div>
+                     <div class="product-sort-price">
+                        <select name="" id="sort-price">
+                            <option value="">Giá từ cao đến thấp</option>
+                            <option value="">Giá từ thấp đến cao</option>
+                        </select>
+                     </div>
+                </div>
+                <div class="product-others">
+                    <select name="" id="list-others">
+                        <option value="#">Hãng khác</option>
+                        <option value="#">Meizu</option>
+                        <option value="#">Apple(iPhone) - Lock</option>
+                        <option value="#">Sony</option>
+                        <option value="#">BlackBerry</option>
+                        <option value="#">Lenovo</option>
+                        <option value="#">BKAV</option>
+                        <option value="#">Huawei</option>
+                        <option value="#">Smartisan</option>
+                        <option value="#">Meiigoo</option>
+                        <option value="#">Apple Wacth</option>
+                        <option value="#">Kho máy cũ</option>
+                    </select>
+                </div>
+            </div>  <!--end product-box top-->
+            <div class="product-list center-item">
+                <!--item 1-->
+                <div class="product-list-item ">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone X trắng">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-x-trang-1.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone X Cũ (64GB, 256GB) - FullBox</a>
+                            </p>
+                            <p class="price">
+                                6.850.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 2-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="Xiaomi 12">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/xiaomi-12-xanh-bac-ha-2.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">Xiaomi 12(Snap 8 Gen 1)</a>
+                            </p>
+                            <p class="price">
+                                14.450.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 3-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone XR vàng">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-xr-vang-3.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone XR cũ(64GB, 128GB) - FullBox</a>
+                            </p>
+                            <p class="price">
+                                7.450.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 4-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone XS vàng">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-xs-vang-4.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone XS cũ(64GB, 256GB) - FullBox</a>
+                            </p>
+                            <p class="price">
+                                7.450.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 5-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone XS max">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-xs-max-vang-5.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone XS Cũ (64GB, 256GB) - FullBox</a>
+                            </p>
+                            <p class="price">
+                                9.750.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="#">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 6-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone 11">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-11-tim-6.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone 11 Cũ (64GB, 256GB)</a>
+                            </p>
+                            <p class="price">
+                                9.950.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 7-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone 11 Pro">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-11-pro-xanh-7.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone 11 Pro Cũ (64GB, 256GB)</a>
+                            </p>
+                            <p class="price">
+                                11.850.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 8-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone 11 Pro Max">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-11-pro-max-vang-8.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone 11 Pro Max Cũ (64GB, 256GB)</a>
+                            </p>
+                            <p class="price">
+                                15.250.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 9-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone 12 Pro Max">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-12-pro-max-cu-vang-9.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone 12 Pro Max Cũ (128GB-256GB-512GB)</a>
+                            </p>
+                            <p class="price">
+                                22.450.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 10-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone 12 Pro">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-12-xanh-12.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone 12 Pro Cũ (128GB-256GB-512GB)</a>
+                            </p>
+                            <p class="price">
+                                17.950.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 11-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone 12 Mini">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-12-mini-xanh-bac-ha-11.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone 12 Mini Cũ (99,99%)</a>
+                            </p>
+                            <p class="price">
+                                9.450.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 12-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="iPhone 12">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/iphone-12-xanh-12.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">iPhone 12 Cũ</a>
+                            </p>
+                            <p class="price">
+                                15.750.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 13-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="Sony Xpheria">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/sony-xperia-1-trang-13.png" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">Sony Xpheria 1 cũ, đẹp keng (Snap 855)</a>
+                            </p>
+                            <p class="price">
+                                4.950.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 14-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="Sam Sung Galaxy Note 10 Plus">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/samsung-note-10-plus-14.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="name-title">
+                                <a href="#">Sam Sung Galaxy Note 10 Cũ(Mỹ, Hàn Quốc)</a>
+                            </p>
+                            <p class="price">
+                                5.750.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 15-->
+                <div class="product-list-item">
+                    <div class="product-item-image">
+                        <div class="icon-hot-new"></div>
+                        <a href="" title="Sam Sung Galaxy Note 10 Plus">
+                            <img style="width: 180px; height: 180px;" src="./assets/img/samsung-note-10-plus-15.jpg" alt="">
+                        </a>
+                        <!--khi hover vào-->
+                        <div class="mask-fade-in"> 
+                            <a href="">
+                                <div class="mask-title">
+                                    <div class="icon"></div>
+                                    <div class="text">Mobile Care</div>
+                                </div>
+                                <ul class="mask-list">
+                                    <li>BH 6 tháng nguồn, màn hình</li>
+                                    <li>Đổi mới 15 ngày đầu tiên</li>
+                                    <li>Tặng ốp lưng, dán cường lực</li>
+                                    <li>Hỗ trợ phần mềm trọn đời máy</li>
+                                </ul>
+                                <a href="#" title="Xem chi tiết chính sách bảo hành tại MobileCity">Bảo hành vàng</a>
+                            </a>
+                        </div>
+                    </div>
+                    <!--information-product-->
+                    <div class="product-item-info">
+                        <div class="product-item-1">
+                            <p class="Sam Sung Galaxy Note 10 Plus">
+                                <a href="#">Sam Sung Galaxy Note 10 Plus(Mỹ, Hàn Quốc)</a>
+                            </p>
+                            <p class="price">
+                                7.950.000 ₫
+                            </p>
+                        </div>
+                        <div class="product-item-2">
+                            <a class="buy" href="">
+                                Mua
+                            </a>
+                        </div>
+                        <div class="product-item-3">
+                            <p>Tặng:<span style="color:red;"> Cường lực - Ốp lưng - Tai<br>nghe</span>  khi mua BHV (Nếu trong hộp<br>
+                                Giảm: <span style="color:red;">100K</span>  áp dụng HSSV mua<br>BHV tại <span style="color:red;">42 Phố Vọng</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--view more-->
+            <div class="viewmore">
+                <a href=""></a>
+            </div>
+        </div>
+        <!--end product box-->
+        
+        <!--source code-->
+        <script 
+            type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+            nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <!--link: http://kenwheeler.github.io/slick/ -> mục getting start: When complete, your HTML should look something like:-->
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
 
-            <div class="product-box"></div>
-            <div class="banner-box"></div>
-
-            <div class="product-box"></div>
-            <div class="banner-box"></div>
-
-            <div class="product-box"></div>
-            <div class="banner-box"></div>
-
-            <div class="product-box"></div>
-            <div class="banner-box"></div>
-       </section>
-       
+        <script src="./slider.js"></script>
     </div>
 </body>
 </html>

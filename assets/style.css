@@ -1,3 +1,7 @@
+html{
+    line-height: 1.15;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,26 +9,25 @@
     outline: none;
 }
 body{
+    width: 100%;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
-.container-main{
-    width: 100%;
-    height: 900px;
-    font-family: sans-serif;
-    background-color: chartreuse;
-   
-}
-/* .header-title{
-    float: left;
+/* .container-main{
+    max-width: 1200px;
+    margin: auto;
 } */
 header{
+    width: 100%;
+    flex-direction: column;
     float: left;
 }
 .header-title{
     width: 100%;
-    height: 62px;
+    /* min-height: 62px; */
     background-color: #fff;
+    float: left;
 }
 .header-top{
     width: 100%;
@@ -81,6 +84,7 @@ select option{
     position: absolute;
     top: 20%;
     right: 50%;
+    
 }
 .search form{
     display: flex;
@@ -95,6 +99,9 @@ select option{
 }
 button, input{
     overflow: visible;  
+}
+.menu ul{
+    list-style: none;
 }
 .item-menu{
     padding: 0 15px;
@@ -146,15 +153,89 @@ button, input{
     justify-content:space-around;
     align-items: center;
 }
-section .container{
-    margin: 0 auto;
-    position: relative;
+.container{
+    float: left;
+    width: 100%;
+   
+    background-color:blueviolet;
 }
-section{
-    display: block;
-}
-.container .feature{
-    width: 80%;
+.image img{
+    width: 100%;
     
+}
+/* .image-slider{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+} */
+ .image img{
+    width: 100%;
+    height: 300px;
+} 
+/*click vào f12 chọn vào item, ảnh cách nhau 10px*/
+.slick-initialized .slick-slide{
+    margin: 0px; 
+}
+/*từ js class = slick-arrow qua css cho arrow*/
+.slick-arrow{
+    /*viết nhanh abscentery*/
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    border: none; /*do là button*/
+    width: 30px;
+    height: 40px;
+    /*viết nhanh flex: center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+    z-index: 2;
+    transition: all 0.2s linear;/*viết nhanh tsall*/
+    opacity: .5;
+}
+.slick-arrow:hover{
+    background-color: #2cccff;
+    color: white;
+    opacity: 1;
+}
+/*css arrow-prev*/
+.slick-prev{
+    left: 0;
+}
+/*css arrow-next*/
+.slick-next{
+    right: 0;
+} 
+/* css class click-dots từ js, F12 tìm class nó */
+.slick-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    list-style: none;
+    display: flex !important; /*nằm ngang*/
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+}
+/*css button*/
+.slick-dots button{
+    font-size: 0;
+    width: 25px;
+    height: 5px;
+    border-radius: 100rem;
+    border-color: rgba(51, 49, 49, 0.205);
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+    opacity: .5;
+    margin-bottom: 10px;
+}
+/*F12 tìm bấm vào button tìm click-active nằm trong class slick-dots */
+.slick-dots .slick-active button{
+    background-color: #2cccff;
 }
 
