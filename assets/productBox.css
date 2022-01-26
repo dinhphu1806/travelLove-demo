@@ -1,15 +1,16 @@
 .product-box{
     float: left;
-    /* margin-top: 10px; */
     width: 100%;
-    min-height: 500px;
+    /* margin-top: 10px; */
+    /* min-width: 1280px;
+    margin: auto;
+     */
     /* background-color:aquamarine; */
 }
 .product-box-category{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  
 }
 .product-box-category-list ul{
     list-style: none;
@@ -57,6 +58,7 @@
 .product-list {
     float: left;
     width: 100%;
+    margin: auto;
 }
 /* .product-list-item .product-item-image{
     width: 100%;
@@ -77,7 +79,7 @@
 .center-item{
     display: grid;
     grid-template-rows: 425px 425px 425px;
-    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-columns: 235px 235px 235px 235px 235px;
     grid-gap: 10px ;
     justify-content: center;
 }
