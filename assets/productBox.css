@@ -60,9 +60,7 @@
 /* product-list-mobile */
 .product-list {
     float: left;
-   
     width: 100%;
-   
 }
 .product-item-image {
     text-align: center;
@@ -85,9 +83,10 @@
     padding: 10px;
     float: left;
     border: 2px solid #ebecec;
-    border-radius: 10px;
+    border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
 }
+
 .center-item{ /*change images*/
     display: grid;
     /* grid-template-rows: 425px 425px 425px; */
@@ -140,7 +139,7 @@
     float: left;
     margin-top: 20px;
     width: 0 auto;
-    min-height: 300px;
+    /* min-height: 500px; */
     /* max-width: 150px;   */
     /* height: 300px; */
     overflow: hidden;
