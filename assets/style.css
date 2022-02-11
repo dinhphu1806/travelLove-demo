@@ -9,7 +9,7 @@ html{
     outline: none;
 }
 body{
-    /* min-width: 978px; */
+    min-width: 978px;
 }
 ul{
     list-style: none;
